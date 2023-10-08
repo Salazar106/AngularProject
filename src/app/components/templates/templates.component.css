@@ -1,0 +1,36 @@
+.menuContainer{
+    display:flex;
+    background-color: rgb(2, 28, 40);
+    width: 100%;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:auto;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.menuContainer img{
+    width: 50px;
+}
+
+.contenedorOpcionesMenu{
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+    margin-right: 10px;
+}
+
+.opcionesMenu{
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: auto;
+    height: 50px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.opcionesMenu:hover{
+    background-color: azure;
+    color: black;
+}

@@ -1,0 +1,43 @@
+<div class="usuarioContainer">
+    <div class="formUsuariosComtainer">
+        <h2 style="width: 100%;">Registrar Usuario</h2>
+
+        <form class="formUsuario"  (ngSubmit)="createUser" >
+            <div class="inputContainer" title=" Write your Full Name" >
+                <label for="name">Name</label>
+                <input type="text"  formControlName="name" id="name">
+                <span style="color: red;" *ngIf="newUser.get('name')?.hasError('required') && newUser.get('name')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputContainer" title="Write your ID Number ">
+                <label for="cedula">ID number</label>
+                <input type="text"  formControlName="cedula" id="cedula">
+                <span style="color: red;" *ngIf="newUser.get('cedula')?.hasError('required') && newUser.get('cedula')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputContainer" title="Write your Phone">
+                <label for="phone">Phone number</label>
+                <input type="text"  formControlName="phone" id="phone">
+                <span style="color: red;" *ngIf="newUser.get('phone')?.hasError('required') && newUser.get('phone')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+            <div class="inputContainer" title="Write your Email">
+                <label for="email">Email</label>
+                <input type="text"  formControlName="email" id="email">
+                <span style="color: red;" *ngIf="newUser.get('email')?.hasError('required') && newUser.get('email')?.touched">El Campo es <strong>REQUERIDO</strong></span>
+            </div>
+        </form>
+        <div class="btnContainer" title="Guardar Usuario">
+            <button [disabled]="newUser.invalid" type="submit">Guardar</button>
+        </div>
+    </div>
+    <div class="tableUsuarioContainer">
+        <h2>Historico Usuarios</h2>
+        <div class="tablaContainer">
+            
+        </div>
+    </div>
+
+
+
+
+
+
+</div>

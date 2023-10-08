@@ -1,0 +1,94 @@
+.usuarioContainer{
+    display: flex;
+    border: 1px solid #b9b9b9ee;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #b9b9b9ee;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.formUsuariosComtainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    
+    
+}
+
+.formUsuario{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tableUsuarioContainer{
+    width: 60%;
+}
+
+.btnContainer{
+    width: 100%;
+}
+.btnContainer button{
+    width: auto;
+    height: 25px;
+    background-color: rgb(39, 119, 164);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.btnContainer button:hover{
+    background-color: rgb(35, 103, 142);
+    transform:scale(1.05)
+}
+.inputContainer{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+
+
+.inputContainer input{
+    border-radius: 5px;
+    border: 1px solid #b9b9b9ee;
+    height: 25px;
+    width: 100%;
+        
+}
+
+
+@media (max-width: 1000px) {
+    .formUsuariosComtainer{
+        width: 100%;
+    }
+    
+    .tableUsuarioContainer{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .inputContainer{
+        width: 100%;
+    }
+    .inputContainer input{
+        width: 97%;     
+    }
+
+    .btnContainer button{
+        width: 50%;
+        height: 30px;
+    }
+}
